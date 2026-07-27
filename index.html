@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery - Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background:#f8f9fa;
+        }
+
+        .hero{
+            background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+            url('https://png.pngtree.com/thumb_back/fh260/background/20220204/pngtree-big-isolated-motorcycle-vector-colorful-icons-flat-illustrations-of-delivery-by-image_984801.jpg');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            height:80vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+        }
+
+        .hero h1{
+            font-size:55px;
+            font-weight:bold;
+        }
+
+        .card img{
+            height:220px;
+            object-fit:cover;
+        }
+
+        footer{
+            background:#0d5fb1;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">🍔 FoodExpress</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Offers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Delicious Food Comes to you</h1>
+        <p class="lead my-4">
+            Order parotta, Biriyani, Meals and more in minutes.
+        </p>
+        <button class="btn btn-warning btn-lg">
+            Order Now
+        </button>
+    </div>
+</section>
+
+<!-- Food Menu -->
+<div class="container py-5">
+
+    <h2 class="text-center mb-5">Popular Dishes</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow">
+                <img src="https://i0.wp.com/chitrasfoodbook.com/wp-content/uploads/2015/02/kerala-parotta.jpg?w=1200&ssl=1" class="card-img-top" alt="Parotta">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Parotta</h5>
+                    <p class="text-danger fw-bold">$15.00</p>
+                    <button class="btn btn-danger w-100">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow">
+                <img src="https://spiceindiaonline.com/wp-content/uploads/2021/05/Tandoori-Chicken-20.jpg" class="card-img-top" alt="Grill">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Grill</h5>
+                    <p class="text-danger fw-bold">$12.99</p>
+                    <button class="btn btn-danger w-100">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow">
+                <img src="https://www.ruchiskitchen.com/wp-content/uploads/2020/09/Chicken-Biryani-Recipe-01-1.jpg" class="card-img-top" alt="Biriyani">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Biriyani</h5>
+                    <p class="text-danger fw-bold">$7.99</p>
+                    <button class="btn btn-danger w-100">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/068/494/726/small/traditional-indian-thali-meal-served-on-banana-leaf-displaying-culinary-delights-photo.jpg" class="card-img-top" alt="Meals">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Meals</h5>
+                    <p class="text-danger fw-bold">$10.99</p>
+                    <button class="btn btn-danger w-100">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Features -->
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <h3>🚚 Fast Delivery</h3>
+                <p>Delivery within 30 minutes.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>🍽 Fresh Food</h3>
+                <p>Prepared by expert chefs every day.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>💳 Easy Payment</h3>
+                <p>Pay with UPI, cards, or cash.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p class="mb-0">
+        © 2026 FoodExpress | Designed with Bootstrap 5
+    </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
